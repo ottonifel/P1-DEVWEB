@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
+    <title>Rotas de ônibus</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div>
+                <img src="./Assets/bee-origami-paper-svgrepo-com.svg" alt="abelha de origami" height="42">
+            </div>
+
+            <div>
+                <h1>Busbus</h1>
+            </div>
+        </div>
+            
+        <nav class="menu">
+             <ul> <!-- Menu de navegação -->
+                 <li><a href="#">Home</a></li>
+                 <div class="dropdown">
+                    <button class="dropbtn">Rotas</button>
+                    <div class="dropdown-content">
+                      <a href="./itinerarios.jsp">Itinerários</a>
+                      <a href="./cadastro.html">Cadastro de itinerários</a>
+                    </div>
+                  </div> 
+                 <li><a href="#">História</a></li>
+                 <li><a href="#">Cartão</a></li>
+                 <li><a href="#">Transparência</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO DA PÁGINA HOME -->
+    <div id="controle-footer">
+    <section>
+        <h1>Linhas de ônibus mais utilizadas</h1>
+    
+        <div class="container">
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>06 - Nova Miami</h3>
+                <p><b>Região da Cidade:</b> Sul</p>
+                <p><b>Ponto inicial:</b> Terminal Grená</p>
+                <p><b>Ponto final:</b> Ocean Drive</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                      <tr>  
+                        <th>Manhã</th>
+                        <th>Tarde</th>
+                        <th>Noite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>07:15</td>
+                        <td>12:00</td>
+                        <td>18:00</td>
+                      </tr>
+                      <tr>
+                        <td>09:00</td>
+                        <td>14:30</td>
+                        <td>20:30</td>
+                      </tr>
+                      <tr>
+                        <td>10:00</td>
+                        <td>16:00</td>
+                        <td>22:00</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                  </div>
+            </div>
+
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>13 - German Park</h3>
+                <p><b>Região da Cidade:</b> Leste</p>
+                <p><b>Ponto inicial</b> Terminal Folclore</p>
+                <p><b>Ponto final:</b> German Park</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:25</td>
+                            <td>13:00</td>
+                            <td>18:40</td>
+                          </tr>
+                          <tr>
+                            <td>08:10</td>
+                            <td>14:35</td>
+                            <td>21:30</td>
+                          </tr>
+                          <tr>
+                            <td>11:00</td>
+                            <td>17:40</td>
+                            <td>23:05</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>23 - Cidade do Rei</h3>
+                <p><b>Região da Cidade:</b> Oeste</p>
+                <p><b>Ponto inicial:</b> Terminal Alvinegro</p>
+                <p><b>Ponto final:</b> Akron</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05:50</td>
+                            <td>15:10</td>
+                            <td>19:00</td>
+                          </tr>
+                          <tr>
+                            <td>08:00</td>
+                            <td>16:30</td>
+                            <td>20:30</td>
+                          </tr>
+                          <tr>
+                            <td>10:10</td>
+                            <td>17:50</td>
+                            <td>22:20</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>27 - UFSCar</h3>
+                <p><b>Região da Cidade:</b> Norte</p>
+                <p><b>Ponto inicial:</b>Terminal Caffé</p>
+                <p><b>Ponto final:</b> UFSCar</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:25</td>
+                            <td>12:00</td>
+                            <td>18:40</td>
+                          </tr>
+                          <tr>
+                            <td>10:25</td>
+                            <td>14:00</td>
+                            <td>20:40</td>
+                          </tr>
+                          <tr>
+                            <td>11:25</td>
+                            <td>16:00</td>
+                            <td>22:40</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>30 - Vila das Cestas</h3>
+                <p><b>Região da Cidade:</b> Leste</p>
+                <p><b>Ponto inicial:</b> Terminal Folclore</p>
+                <p><b>Ponto final:</b> Golden Gate</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tr>
+                                <td>09:05</td>
+                                <td>14:20</td>
+                                <td>20:00</td>
+                              </tr>
+                              <tr>
+                                <td>10:10</td>
+                                <td>15:50</td>
+                                <td>20:40</td>
+                              </tr>
+                              <tr>
+                                <td>11:15</td>
+                                <td>17:10</td>
+                                <td>21:20</td>
+                              </tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>44 - Quintais do Patrão</h3>
+                <p><b>Região da Cidade:</b> Sul</p>
+                <p><b>Ponto inicial:</b> Terminal Grená</p>
+                <p><b>Ponto final:</b> Petronas</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:00</td>
+                            <td>13:00</td>
+                            <td>17:00</td>
+                          </tr>
+                          <tr>
+                            <td>08:00</td>
+                            <td>15:00</td>
+                            <td>19:00</td>
+                          </tr>
+                          <tr>
+                            <td>10:00</td>
+                            <td>17:00</td>
+                            <td>21:00</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>51 - Viajante do Mundo</h3>
+                <p><b>Região da Cidade:</b> Oeste</p>
+                <p><b>Ponto inicial:</b> Terminal Alvinegro</p>
+                <p><b>Ponto final:</b> Laranjeiras</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>04:55</td>
+                            <td>16:20</td>
+                            <td>18:45</td>
+                          </tr>
+                          <tr>
+                            <td>06:05</td>
+                            <td>17:05</td>
+                            <td>20:25</td>
+                          </tr>
+                          <tr>
+                            <td>08:15</td>
+                            <td>17:55</td>
+                            <td>21:10</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>71 - Jardim de Malta</h3>
+                <p><b>Região da Cidade:</b> Norte</p>
+                <p><b>Ponto inicial:</b> Terminal Caffé</b></p>
+                <p><b>Ponto final:</b> São Januário</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:15</td>
+                            <td>12:10</td>
+                            <td>19:00</td>
+                          </tr>
+                          <tr>
+                            <td>10:40</td>
+                            <td>12:45</td>
+                            <td>19:25</td>
+                          </tr>
+                          <tr>
+                            <td>11:05</td>
+                            <td>13:10</td>
+                            <td>19:50</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img class="align-center" src="./Assets/bus-svgrepo-com.svg" alt="Ícone de Linha" height="32">
+                <h3>99 - Vegetti</h3>
+                <p><b>Região da Cidade:</b> Oeste</p>
+                <p><b>Ponto inicial:</b> Terminal Alvinegro</b></p>
+                <p><b>Ponto final:</b> Bosque Castelo</p>
+                <h4><b>Horários de Saída:</b></h4>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Manhã</th>
+                            <th>Tarde</th>
+                            <th>Noite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05:20</td>
+                            <td>14:20</td>
+                            <td>18:20</td>
+                          </tr>
+                          <tr>
+                            <td>07:00</td>
+                            <td>16:00</td>
+                            <td>20:00</td>
+                          </tr>
+                          <tr>
+                            <td>11:40</td>
+                            <td>17:40</td>
+                            <td>23:40</td>
+                          </tr>
+                    </tbody>
+                </table>
+                <div class="animacao" href="#">
+                    <div class="seta">
+                      →
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- FIM DO CONTEÚDO DA PÁGINA HOME -->
+
+    <footer>
+        <div id="logo-footer">
+            <img src="./Assets/bee-svgrepo-com-2.svg" alt="abelhinha" height="60">
+            <h2>Busbus</h2>
+        </div>
+        <nav class="menu-footer">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li><a href="#">Rotas</a></li>
+                 <li><a href="#">História</a></li>
+                 <li><a href="#">Cartão</a></li>
+                 <li><a href="#">Transparência</a></li>
+            </ul>
+        </nav>
+        <div class="info-footer">
+            <h3>Universidade Federal de São Carlos <br> Campus Sorocaba</h3>
+
+            <p>
+                Desenvolvimento Web <br>
+                Mini Projeto 1 <br> 
+                Grupo: <br>
+                Bruna Scarpelli, Felipe Ottoni, Gustavo Kis, Letícia Almeida e Ricardo Suzuki.
+            </p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

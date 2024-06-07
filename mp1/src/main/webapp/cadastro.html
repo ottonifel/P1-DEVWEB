@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+
+    <link rel="shortcut icon" type="imagex/svg" href="./Assets/bee-svgrepo-com-1.svg">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <div>
+                <img src="./Assets/bee-origami-paper-svgrepo-com.svg" alt="abelha de origami" height="42">
+            </div>
+
+            <div>
+                <h1>Busbus</h1>
+            </div>
+        </div>
+            
+        <nav class="menu">
+             <ul> <!-- Menu de navegação -->
+                 <li><a href="./index.html">Home</a></li>
+                 <div class="dropdown">
+                    <button class="dropbtn">Rotas</button>
+                    <div class="dropdown-content">
+                      <a href="./itinerarios.jsp">Itinerários</a>
+                      <a href="#">Cadastro de itinerários</a>
+                    </div>
+                  </div> 
+                 <li><a href="#">História</a></li>
+                 <li><a href="#">Cartão</a></li>
+                 <li><a href="#">Transparência</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
+    <div id="controle-footer">
+    <section>
+        <h1>Cadastro de Itinerário</h1>
+
+        <div class="container">
+            <form>
+                <label for="nomeLinha">Nome da linha:</label>
+                <input type="text" id="nomeLinha" name="nomeLinha" placeholder="Insira o nome da linha. Por exemplo: 27 - UFSCar" required>
+
+                <div id="mensagemErroNomeLinha"></div>
+        
+                <label for="regiao">Região da cidade:</label>
+                <input type="text" id="regiao" placeholder="Insira a região do ponto inicial da linha. Por exemplo: Sul" name="regiao" required>
+
+                <div id="mensagemErroRegiao"></div>
+        
+                <div class="container-p">
+                    <label>Pontos de parada:</label>
+                    <div id="paradas">
+                        <div class="parada-container">
+                            <input type="text" id="pontoParada" name="parada[]" placeholder="Digite um ponto de parada"><button type="button" class="btn-remove" onclick="removerParada(this)">-</button>
+                    </div>
+                </div>
+
+                <div id="mensagemErroParadas"></div>
+            
+                <button type="button" class="btn-add" onclick="adicionarParada()">+</button>
+                </div>
+        
+                <div class="container-p">
+                    <div id="horarios">
+                        <label for="horarios">Horários de Saída:</label>
+                        <div class="horario-container">
+                            <input type="text" id="horario" name="horario[]" placeholder="Digite um horário. Por exemplo: 12:00" required><button type="button" class="btn-remove" onclick="removerHorario(this)">-</button>
+                        </div>
+                    </div>
+
+                    <div id="mensagemErroHorario"></div>
+
+                    <button type="button" class="btn-add" onclick="adicionarHorario()">+</button>
+                </div>
+                
+                <button id="enviar" type="submit">Enviar</button>
+            </div>
+            
+            </form>
+        </div>
+    </section>
+    <!-- FIM DO CONTEÚDO DA PÁGINA CADASTRO DE ITENS-->
+
+    <footer>
+        <div id="logo-footer">
+            <img src="./Assets/bee-svgrepo-com-2.svg" alt="abelhinha" height="60">
+            <h2>Busbus</h2>
+        </div>
+        <nav class="menu-footer">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li><a href="#">Rotas</a></li>
+                 <li><a href="#">História</a></li>
+                 <li><a href="#">Cartão</a></li>
+                 <li><a href="#">Transparência</a></li>
+            </ul>
+        </nav>
+        <div class="info-footer">
+            <h3>Universidade Federal de São Carlos <br> Campus Sorocaba</h3>
+
+            <p>
+                Desenvolvimento Web <br>
+                Mini Projeto 1 <br> 
+                Grupo: <br>
+                Bruna Scarpelli, Felipe Ottoni, Gustavo Kis, Letícia Almeida e Ricardo Suzuki.
+            </p>
+        </div>
+    </footer>
+    </div>
+    <!-- IMPORTAÇÕES DOS JSs -->
+    <script src="./script/camposForm.js"></script> 
+    <script src="./script/inputValidacao.js"></script>
+
+</body>
+</html>
